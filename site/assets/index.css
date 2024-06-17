@@ -1,0 +1,42 @@
+html, body {
+    font-family: 'Playpen Sans',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 14px;
+    background-color: #f5f5f5;
+}
+
+nav .brand-logo {
+    font-size: 1rem!important;
+    white-space: nowrap;
+}
+
+.page-footer {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.github-mark-white {
+    width: 20px;
+    margin: 0 8px -2px 0;
+}
+
+.langs {
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.langs a {
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.langs > .selected {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 1020px) {
+    .container {
+        width: 50%;
+    }
+}
