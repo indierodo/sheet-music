@@ -12,9 +12,15 @@ nav .brand-logo {
 
 .page-footer {
     font-size: 0.8rem;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-footer span {
+    margin: -10px 10px 14px 14px;
 }
 
 .github-mark-white {
