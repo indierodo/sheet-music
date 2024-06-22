@@ -31,9 +31,6 @@ jobs:
       - name: Setup Musescore
         run: sudo apt update && sudo apt install musescore3 -y
 
-      - name: Setup Jinja
-        run: python3 -m pip install jinja2
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -45,8 +42,8 @@ jobs:
 
       - name: Generate artifact
         run: |
-          mv ./scores ./site/scores &&
-          python3 jinja.py
+          python3 jinja.py &&
+          mv ./scores ./site/scores
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
