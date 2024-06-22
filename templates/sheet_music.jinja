@@ -12,7 +12,7 @@
 
       <ul id="score-list" class="collection">
         {% for score in scores %}
-          <li class="collection-item"><a href="{{score.pdf}}"><span class="new badge red darken-4" data-badge-caption="">PDF</span></a><a href="{{score.mscz}}"><span class="new badge indigo darken-4" data-badge-caption="">MSCZ</span></a>{{score.name}}</li>
+          <li class="collection-item"><a href="./scores/{{score.pdf}}"><span class="new badge red darken-4" data-badge-caption="">PDF</span></a><a href="./scores/{{score.mscz}}"><span class="new badge indigo darken-4" data-badge-caption="">MSCZ</span></a>{{score.name}}</li>
         {% endfor %}
       </ul>
 
