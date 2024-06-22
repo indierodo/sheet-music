@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/index.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="grey darken-3" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="./" class="brand-logo">{{title}}</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="https://github.com/indierodo/sheet-music/"><img src="assets/github-mark-white.svg" alt=""
+                class="github-mark-white">{{fork_me}}</title></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  {% block main %}{% endblock main %}
+  {% block footer %}{% endblock footer %}
+</body>
+
+</html>

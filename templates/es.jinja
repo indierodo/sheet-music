@@ -1,0 +1,23 @@
+{% extends "sheet_music.jinja" %}
+
+{% block langs %}
+    <div class="langs">
+        <a href="./">English</a>&nbsp;&nbsp;<a href="./es.html" class="selected">Español</a>
+    </div>
+{% endblock langs %}
+
+{% block introduction %}
+    <p>Hola, soy Rod! Aquí tengo mis transcripciones musicales (principalmente drum charts) para tenerlas a mano. Si
+    quieres échales un ojo, a lo mejor te son útiles. Puedes contactarme <a href="/contact">aquí</a>.</p>
+    <p>Haz clic en la <span class="indigo-text">etiqueta azul</span> para descargar el editable de <a
+    href="https://musescore.org" target="_blank">MuseScore</a>. Para imprimir o bajar el PDF, da clic en la <span
+    class="red-text">etiqueta roja</span>.</p>
+{% endblock introduction %}
+
+{% block footer %}
+    <footer class="z-depth-1 page-footer grey darken-3">
+        <span><a href="./privacy.html">Privacidad y Legal (en inglés)</a></span>
+        <span>Hecho con ❤️ por <a href="https://github.com/indierodo">indierodo</a> en un día de verano, con mucho
+        calor.</span>
+    </footer>
+{% endblock footer %}
